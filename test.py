@@ -12,6 +12,9 @@ class TestIsOdd(unittest.TestCase):
     # edge case
     def test_zero(self):
         self.assertFalse(is_odd(0))
+    def test_neg_num(self):
+        self.assertTrue(is_odd(-3))
+
 
 if __name__ == '__main__':
     unittest.main()
