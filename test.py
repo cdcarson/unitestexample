@@ -14,6 +14,8 @@ class TestIsOdd(unittest.TestCase):
         self.assertFalse(is_odd(0))
     def test_neg_num(self):
         self.assertTrue(is_odd(-3))
+     def test_neg_pos_num(self):
+        self.assertTrue(is_odd(3))
 
 
 if __name__ == '__main__':
